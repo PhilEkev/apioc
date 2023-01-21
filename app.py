@@ -22,7 +22,7 @@ model = pickle.load(open('./LGBMClassifier.pkl', 'rb'))
 
 @app.route('/')
 def hello():
-    return 'Hello, World!'
+    return 'Bienvenu au sein de l\'API de Philippe'
 
 @app.route('/credit/<id_client>', methods=['GET'])
 def credit(id_client):
